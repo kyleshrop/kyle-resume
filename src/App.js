@@ -5,6 +5,7 @@ import Summary from './components/Summary';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
 import './styles/App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Experience />
       <Education />
       <Skills />
+      <Portfolio />
     </div>
   );
 }
