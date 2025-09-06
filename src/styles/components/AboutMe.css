@@ -1,0 +1,131 @@
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  padding-top: 8rem; /* Add extra padding to account for nav */
+}
+
+.hero-content {
+  text-align: center;
+  animation: fadeInUp 1s ease;
+  max-width: 900px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  animation: glow 3s ease-in-out infinite;
+  letter-spacing: -1px;
+}
+
+@keyframes glow {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.2); }
+}
+
+.hero .title {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero .tagline {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.contact-item:hover {
+  transform: translateY(-3px);
+  background: rgba(248, 135, 103, 0.1);
+  box-shadow: 0 10px 30px rgba(248, 135, 103, 0.2);
+}
+
+.contact-item svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary);
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
+}
+
+.scroll-indicator svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--secondary);
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 6rem; /* Ensure enough space on mobile */
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem; /* Add extra margin on mobile */
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}

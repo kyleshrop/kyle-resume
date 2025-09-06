@@ -1,12 +1,13 @@
 import React from 'react';
 import Navigation from './components/Navigation';
+import AboutMe from './components/AboutMe';
 import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
       <Navigation />
-      <h1>Testing Navigation Component</h1>
+      <AboutMe />
     </div>
   );
 }
