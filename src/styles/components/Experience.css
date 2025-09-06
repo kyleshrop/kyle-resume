@@ -1,0 +1,63 @@
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.job-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  color: #64748b;
+  font-size: 0.9rem;
+  background: rgba(248, 135, 103, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.description {
+  color: #94a3b8;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 1rem;
+  margin-bottom: 0.75rem;
+  color: #cbd5e1;
+  position: relative;
+}
+
+li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .job-header {
+    flex-direction: column;
+  }
+}
