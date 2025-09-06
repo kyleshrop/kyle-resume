@@ -66,7 +66,8 @@ export const resumeData = {
       "Kotlin",
       "Java", 
       "Python",
-      "Bash"
+      "Bash",
+      "JavaScript"
     ],
     "AI Tooling": [
       "Claude Code",
