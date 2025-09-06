@@ -1,4 +1,29 @@
-/* Global styles will go here */
+:root {
+  --primary: #f88767;
+  --primary-dark: #e67555;
+  --secondary: #bde5e1;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --bg-primary: #1a1f2e;
+  --bg-secondary: #232938;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --border: rgba(189, 229, 225, 0.1);
+  --accent: #bde5e1;
+  --gradient-1: linear-gradient(135deg, #f88767 0%, #bde5e1 100%);
+  --gradient-2: linear-gradient(135deg, #bde5e1 0%, #f88767 100%);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background: linear-gradient(135deg, #1a1f2e 0%, #232938 50%, #1a1f2e 100%);
+  color: #f1f5f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .App {
   text-align: left;
 }
