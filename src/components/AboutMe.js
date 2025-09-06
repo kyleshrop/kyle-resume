@@ -6,8 +6,8 @@ const AboutMe = () => {
   const { personal } = resumeData;
 
   return (
-    <section id="home" className="hero">
-      <div className="hero-content">
+    <section id="home" className="about-me">
+      <div className="about-me-content">
         <h1>{personal.name}</h1>
         <p className="title">{personal.title}</p>
         <p className="tagline">{personal.tagline}</p>

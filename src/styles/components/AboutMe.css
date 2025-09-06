@@ -1,5 +1,5 @@
-/* Hero Section */
-.hero {
+/* About Me Section */
+.about-me {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@
   padding-top: 8rem; /* Add extra padding to account for nav */
 }
 
-.hero-content {
+.about-me-content {
   text-align: center;
   animation: fadeInUp 1s ease;
   max-width: 900px;
@@ -26,7 +26,7 @@
   }
 }
 
-.hero h1 {
+.about-me h1 {
   font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 800;
   margin-bottom: 1rem;
@@ -40,7 +40,7 @@
   50% { filter: brightness(1.2); }
 }
 
-.hero .title {
+.about-me .title {
   font-size: 1.5rem;
   color: var(--secondary);
   margin-bottom: 2rem;
@@ -49,7 +49,7 @@
   text-transform: uppercase;
 }
 
-.hero .tagline {
+.about-me .tagline {
   font-size: 1.1rem;
   color: #cbd5e1;
   margin-bottom: 3rem;
@@ -115,11 +115,11 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero {
+  .about-me {
     padding-top: 6rem; /* Ensure enough space on mobile */
   }
-  
-  .hero h1 {
+
+  .about-me h1 {
     font-size: 2.5rem;
     margin-top: 1rem; /* Add extra margin on mobile */
   }
